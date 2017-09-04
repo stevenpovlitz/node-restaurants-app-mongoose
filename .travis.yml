@@ -2,4 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
- 
+deploy:
+  provider: heroku
+  api_key:
+    secure: Pyq1OMhDNL31vhgthn/wTCAOZdZ/EyUXHxH4Dx5jWNS6saSnaVkQ3pdG4LNgdbbDEPGT/Axb9NHkVT0xjjnReRBnyBTuE3gYgK8hvUX4dY32aJn681EcOqJ/pfOTq6Q4K1asXKEYROi+cUMdGX+twZ4blJ7tYl0A7r3znvNXiO7bBRsGKRA0VJkY3oMokf2iffzYYg5qyNJMVv0p9QVvpm7oGDmwnroNDve4LamDjfJ7g9zAj4GdH1cSsy8FQIW6ar2y/eyLXcGut4N4fKiCt7B/eTzyIFvrQgmCcItK1lhx4pJ9KSDSwnj/WxLI8n75OPBOv70k36L0kv8+zQ3BfP8dk9B2VR1X0Y2Wg5ohMecNju+Wry7MI7WhF8GXricqO+uyTjcUjtiQLLvBQDIpNiBXKYf58S0XpPXsjuYPRMVna/kb0hQKLvGkM9CaYG9a8feLz0Bd+CAV0J/W0bmzxzWjk4g6tLyhiaCifrznTpzd7M6j3cGLDViDPmoFoAHmWMg26vmmENEePXKuDdv71r+utLTM5gmb44d5tHYzJRMpMLsULCf8W9zfTQlHB4bMJBjc3VZNuhFqzZqYPsqWUGtpdcufo+fjvGQgLPImjtJTlKeUAAUCosk/CqjeY/5ZMZST1pKS0DbPF4uaDZoKyO6kzF7KK30x8JlZpV11d34=
+  app: tranquil-brook-83142
+  on:
+    repo: stevenpovlitz/node-restaurants-app-mongoose
